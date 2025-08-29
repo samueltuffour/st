@@ -11,9 +11,19 @@
     <!--Header-->
     <header class="navbar">
       <div class="logo">
-        <span class="bkgrnd">SAMUEL TUFFOUR'S</span> PERSONAL PORTFOLIO
+        <span class="bkgrnd">SAMUEL TUFFOUR'S</span>
       </div>
+      <div class="subtitle">PERSONAL PORTFOLIO</div>
       <div class="menu">MENU &#9776;</div>
+      <!-- Fullscreen nav menu -->
+      <nav class="nav-overlay">
+        <span class="close-btn">&times;</span>
+        <a href="#about">HOME</a>
+        <a href="#projects">ABOUT ME</a>
+        <a href="#resume">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+        <p href="#contact" class="cnt">CONTACT ME</p>
+      </nav>
     </header>
 
     <!--Hero Section-->
@@ -58,3 +68,29 @@
     </footer>
   </body>
 </html>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    const hero = document.querySelector(".hero"); 
+    const heroHeight = hero.offsetHeight;
+
+    if (window.scrollY > heroHeight) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  const menuBtn = document.querySelector(".menu");
+  const navOverlay = document.querySelector(".nav-overlay");
+  const closeBtn = document.querySelector(".close-btn");
+
+  menuBtn.addEventListener("click", () => {
+    navOverlay.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    navOverlay.classList.remove("active");
+  });
+</script>

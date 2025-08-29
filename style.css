@@ -13,21 +13,107 @@ body {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* logo left, menu right */
   padding: 15px 30px;
   background: transparent;
   z-index: 10;
+  flex-wrap: nowrap; /* prevents wrapping */
 }
+
+.navbar.scrolled {
+  background: rgba(44, 49, 69, 0.9); /* dark background when scrolled */
+}
+
+/* Fullscreen nav overlay */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(44, 49, 69, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.nav-overlay a {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: color 0.7s ease;
+}
+
+.nav-overlay a:hover {
+  color: #64dbff;
+}
+
+/* Show overlay when active */
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cnt {
+  font-size: 13px;
+  letter-spacing: 3px;
+  background-color: white;
+  color: #2c3145;
+  padding: 15px 60px;
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cnt:hover {
+  background-color: #96d9ee;
+}
+
 .logo {
   font-size: 13px;
   letter-spacing: 3px;
-  color: #2c3145; /* dark text */
-  padding: 5px 10px;
-  margin-right: 10px;
   font-weight: bold;
+  color: #2c3145;
+  white-space: nowrap; /* keeps the text in one line */
+}
+
+.logo-wrap {
+  display: flex;
+  flex-direction: row; /* logo + subtitle side by side (default) */
+  align-items: center;
+  gap: 10px;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #fff;
+  white-space: wrap;
 }
 
 .bkgrnd {
@@ -44,6 +130,8 @@ body {
   cursor: pointer;
   font-size: 13px;
   letter-spacing: 3px;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 /* Hero Section */
@@ -291,14 +379,15 @@ footer {
 
 /* Phones */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-  }
-
   .logo {
     font-size: 11px;
     text-align: center;
+  }
+
+  .logo-wrap {
+    flex-direction: column; /* stack logo above subtitle */
+    align-items: flex-start; /* keep aligned to left */
+    gap: 3px;
   }
 
   .menu {
