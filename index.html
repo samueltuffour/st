@@ -5,6 +5,10 @@
     <meta name="viewport" content=" width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -106,7 +110,7 @@
             server management to frontend design that feels smooth and
             intuitive. Each project strengthens my ability to merge creativity
             with technical rigor while delivering solutions that are practical
-            and impactful. lorem100
+            and impactful.
           </p>
         </div>
 
@@ -134,10 +138,137 @@
       </div>
     </section>
 
+    <div class="contact-wrapper">
+      <!--Contact Section-->
+      <section class="contact-section">
+        <!-- Left side: Contact form-->
+
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="input-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="message">MESSAGE</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">SEND MESSAGE</button>
+            <button type="reset" class="clear-btn">CLEAR</button>
+          </form>
+        </div>
+
+        <!-- Right side: Contact form-->
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="28"
+                height="25"
+                src="https://img.icons8.com/fluency-systems-filled/48/new-post.png"
+                alt="new-post"
+              />
+            </span>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:samueltufffour235@gmail.com"
+                  >samueltufffour235@gmail.com</a
+                ><br />
+                <a href="mailto:st041@bucknell.edu">st041@bucknell.edu</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/forma-thin-filled/24/phone.png"
+                alt="phone"
+              />
+            </span>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+13477124351">+1 (347) 712-4351</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios-filled/50/home.png"
+                alt="home"
+              />
+            </span>
+            <div>
+              <h3>Address</h3>
+              <p>
+                701 Moore Avenue, Bucknell University<br />
+                Lewisburg, PA 17837 <br />
+                United States of America
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!--Footer-->
-    <footer>
-      <p>I am for equity because <em> equity starts with everyone.</em></p>
-    </footer>
+    <section>
+      <div class="social-links">
+        <h3>MY SOCIAL MEDIA LINKS</h3>
+        <div class="icons">
+          <div class="icons">
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/github.png"
+                alt="github"
+              />
+            </span>
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                alt="instagram"
+              />
+            </span>
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/linkedin-2--v1.png"
+                alt="linkedin"
+              />
+            </span>
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios-filled/50/twitterx--v2.png"
+                alt="twitter"
+              />
+            </span>
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios-filled/50/discord-logo.png"
+                alt="discord"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
