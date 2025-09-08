@@ -489,7 +489,6 @@ html {
   padding: 16px 14px; /* more inner space = bigger field */
   font-size: 16px; /* larger text */
   border: none;
-  border-radius: 4px;
   background: #2d3150;
   color: #fff;
   box-sizing: border-box; /* keeps padding inside the width */
@@ -657,26 +656,6 @@ html {
 }
 
 /* Phones */
-@media (max-width: 650px) {
-  .work-img {
-    margin: auto;
-    width: 90%;
-    height: 250px; /* try 300px if you want bigger */
-    margin-bottom: 20px;
-  }
-}
-
-
-@media (max-width: 800px) {
-  .work-img {
-    margin: auto;
-    width: 50%;
-    height: 250px; /* try 300px if you want bigger */
-    margin-bottom: 20px;
-  }
-}
-
-
 @media (max-width: 950px) {
   .logo {
     font-size: 11px;
@@ -737,8 +716,8 @@ html {
 
   .work-img {
     margin: auto;
-    width: 70%;
-    height: px; /* try 300px if you want bigger */
+    width: 90%;
+    height: 250px; /* try 300px if you want bigger */
     margin-bottom: 20px;
   }
   .work-item p {
@@ -758,9 +737,6 @@ html {
     text-align: center;
     padding: 0 10px; /* safe padding on smaller screens */
   }
-}
-
-@media (max-width: 950px) {
   .contact-section {
     grid-template-columns: 1fr; /* stack into one column */
   }
@@ -794,4 +770,167 @@ html {
     gap: 15px;
     cursor: pointer;
   }
+
+    /* Mobile-first inputs */
+.input-group textarea {
+  min-height: 200px; /* smaller height for phones */
+  resize: vertical;
+}
+
+.input-group input {
+  min-height: 50px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #2d3150;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border: 2px solid #90e4fd;
+}
+
+/* Contact Section */
+.contact-section {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e2235;
+  padding: 20px 10px; /* reduce padding for mobile */
+}
+
+.contact-form {
+  padding: 0; /* remove right padding for mobile */
+  border-right: none; /* remove side border */
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: none;
+  background: #2d3150;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.send-btn,
+.clear-btn {
+  width: 100%; /* full width for buttons */
+  font-size: 14px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.send-btn:hover {
+  background-color: #90e4fd;
+  color: #1e2235;
+}
+
+.clear-btn:hover {
+  color: #90e4fd;
+  border: 2px solid #90e4fd;
+}
+
+/* Contact info styling */
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info-item {
+  flex-direction: row; /* default horizontal */
+  gap: 10px;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item a {
+  font-size: 18px;
+}
+
+.info-item p {
+  font-size: 16px;
+}
+
+/* Icon styling */
+.icon {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+}
+
+/* Footer icons */
+.icon-circle {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links {
+  margin: 40px 0 40px 0; /* center-ish spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links .icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Optional: Stack info items vertically on really small screens */
+@media screen and (max-width: 480px) {
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .social-links {
+    margin-left: 0;
+  }
+}
+
 }
