@@ -1,0 +1,68 @@
+/* Section styling */
+.navbar {
+  background: #1e2540;
+}
+.resume-section {
+  background: #1e2540;
+  color: white;
+  text-align: left;
+}
+
+.resume-container {
+  max-width: 1500px;
+  margin-left: 270px;
+}
+
+/* Title */
+.resume-title {
+  padding-top: 100px;
+  border-bottom: 2px solid white;
+  display: inline-block; /* so the underline fits the text */
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 52px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+  height: 170px;
+}
+
+
+/* Text */
+.resume-text {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-left: 300px;
+  margin-right: 200px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+/* Buttons */
+.resume-buttons {
+  margin-bottom: 90px;
+  margin-left: 290px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #96d9ee;
+  border: 2px solid #96d9ee;
+}
+
+/* PDF viewer */
+.resume-pdf iframe {
+  width: 1850px;
+  max-width: 5000px;
+  height: 1050px;
+  border: none;
+}

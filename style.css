@@ -26,7 +26,7 @@ html {
   align-items: center;
   justify-content: space-between; /* logo left, menu right */
   padding: 15px 30px;
-  background: transparent;
+  background: #2d3150;
   z-index: 10;
   flex-wrap: nowrap; /* prevents wrapping */
 }
@@ -259,7 +259,7 @@ html {
   align-items: flex-start;
   justify-content: center;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   height: 35vh;
   padding: 50px;
@@ -306,7 +306,7 @@ html {
   align-items: flex-start;
   justify-content: center;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   min-height: 300px;
   padding: 50px;
@@ -324,11 +324,15 @@ html {
 }
 
 /* keep text above overlay */
-.resume h2 {
+.resume a {
   position: relative;
   z-index: 1;
   border-bottom: 2px solid white; /* underline effect */
   padding-bottom: 5px;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 24px;
 }
 .resume p {
   position: relative;
