@@ -15,6 +15,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #1e2235;
+  scroll-behavior: smooth;
 }
 /* Navbar */
 .navbar {
@@ -227,7 +228,6 @@ html {
   padding: 50px;
   overflow: hidden;
   height: 40vh;
-  
 }
 
 /*OVERLAY for about me*/
@@ -792,12 +792,12 @@ html {
   }
 
   .projects {
-  font-size: 17px;
-  text-align: left;
-  height: 35vh;
-  padding: 50px;
-  overflow: hidden;
-}
+    font-size: 17px;
+    text-align: left;
+    height: 35vh;
+    padding: 50px;
+    overflow: hidden;
+  }
 
   /* Mobile-first inputs */
   .input-group textarea {
