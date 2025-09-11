@@ -26,7 +26,6 @@
   height: 170px;
 }
 
-
 /* Text */
 .resume-text {
   font-size: 17px;
@@ -65,4 +64,59 @@
   max-width: 5000px;
   height: 1050px;
   border: none;
+}
+
+/* Default styles (desktop-first) – keep your code here */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .resume-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .resume-title {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 1.6em;
+    text-align: center; /* center for phone */
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .resume-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .resume-buttons {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .btn {
+    width: 40%; /* make buttons stretch full width */
+    box-sizing: border-box;
+  }
+
+  .resume-pdf iframe {
+    width: 100%;
+   /* smaller height for phone */
+    
+  }
+
+  .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 }
