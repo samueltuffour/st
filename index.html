@@ -304,13 +304,4 @@
   closeBtn.addEventListener("click", () => {
     navOverlay.classList.remove("active");
   });
-
-  document
-    .getElementById("get-started")
-    .addEventListener("click", function (e) {
-      e.preventDefault(); // stop default jump
-      document.querySelector("#about").scrollIntoView({
-        behavior: "smooth",
-      });
-    });
 </script>

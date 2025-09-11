@@ -215,6 +215,19 @@ html {
   padding: 50px;
 }
 
+.about, .projects {
+  height: 40vh;   /* exactly same height */
+  min-height: 300px; /* optional: ensure readable on small screens */
+}
+
+.about, .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center text */
+  align-items: center;     /* horizontally center text */
+  text-align: center;
+}
+
 .about {
   position: relative;
   background: url("me1.jpeg") center/cover no-repeat;
