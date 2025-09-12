@@ -75,10 +75,6 @@
   gap: 40px; /* space between image and text */
 }
 
-.info-row1.reverse {
-    flex-direction: row-reverse;
-}
-
 .info-image img {
   width: 100%;
   max-width: 500px;
@@ -118,6 +114,14 @@
 .info-text p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.info-rowreverse1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 40px; /* space between image and text */
 }
 
 /* Mobile-friendly */
