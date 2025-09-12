@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="navbar">
+      <div class="logo">
+        <span class="bkgrnd">SAMUEL TUFFOUR'S</span>
+      </div>
+      <div class="subtitle">PERSONAL PORTFOLIO</div>
+      <div class="menu">MENU &#9776;</div>
+      <!-- Fullscreen nav menu -->
+      <nav class="nav-overlay">
+        <span class="close-btn">&times;</span>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="resume.html">RESUME</a>
+        <p href="#contact" class="cnt">CONTACT ME</p>
+      </nav>
+    </header>
+    
+      <section id="about" class="about-section">
+      
+        <!-- Title -->
+        <h2 class="about-title">Hi!</h2>
+
+        <!-- Description -->
+        <p class="about-text">
+          My name is Samuel Tuffour and I am an undergraduate Computer Science & Engineering Major at 
+          Bucknell University (Class of 2028). I am also pursuing on the Premed Tack. I was born in Kumasi, Ghana but I am currently a resident of the United States in the Bronx, NYC.
+            Please feel free to contact me! I would love to connect with anyone.
+        </p>
+
+      </section>
+      <section class="info-section">
+        <!-- First row: image left, text right -->
+        <div class="info-row">
+            <div class="info-image">
+            <img src="your-image1.jpg" alt="Me and a friend in Bali">
+            </div>
+            <div class="info-text">
+            <h2>Third-culture Kid</h2>
+            <p>
+                Being a Korean who was born and raised in Indonesia is like being in a busy intersection. 
+                You are exposed to various cultures and the interactions between them. I am grateful 
+                to have the opportunities of a third-culture kid...
+            </p>
+            </div>
+        </div>
+
+        <!-- Second row: text left, image right -->
+        <div class="info-row reverse">
+            <div class="info-text">
+            <h2>Hobbies</h2>
+            <p>
+                As you can probably tell from the previous section, I love eating food. My favorite cuisines 
+                are Korean, Indonesian, Chinese, and Japanese food. Other than eating, I love playing badminton...
+            </p>
+            </div>
+            <div class="info-image">
+            <img src="your-image2.jpg" alt="Me eating food">
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-wrapper">
+      <!--Contact Section-->
+      <section class="contact-section">
+        <!-- Left side: Contact form-->
+
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="input-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="message">MESSAGE</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">SEND MESSAGE</button>
+            <button type="reset" class="clear-btn">CLEAR</button>
+          </form>
+        </div>
+
+        <!-- Right side: Contact form-->
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="28"
+                height="25"
+                src="https://img.icons8.com/fluency-systems-filled/48/new-post.png"
+                alt="new-post"
+              />
+            </span>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:samueltufffour235@gmail.com"
+                  >samueltufffour235@gmail.com</a
+                ><br />
+                <a href="mailto:st041@bucknell.edu">st041@bucknell.edu</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/forma-thin-filled/24/phone.png"
+                alt="phone"
+              />
+            </span>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+13477124351">+1 (347) 712-4351</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="icon">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios-filled/50/home.png"
+                alt="home"
+              />
+            </span>
+            <div>
+              <h3>Address</h3>
+              <p>
+                701 Moore Avenue, Bucknell University<br />
+                Lewisburg, PA 17837 <br />
+                United States of America
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Footer-->
+    <section>
+      <div class="social-links">
+        <h3>MY SOCIAL MEDIA LINKS</h3>
+        <div class="icons">
+          <div class="icons">
+            <a href="https://github.com/samueltuffour">
+              <span class="icon-circle">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/github.png"
+                  alt="github"
+                />
+              </span>
+            </a>
+            <a href="https://instagram.com/itstuffour">
+              <span class="icon-circle">
+                <img
+                  src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                  alt="instagram"
+                />
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/samuel-tuffour">
+              <span class="icon-circle">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/linkedin-2--v1.png"
+                  alt="linkedin"
+                />
+              </span>
+            </a>
+            <a href="https://www.x.com/itstuffour">
+              <span class="icon-circle">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/twitterx--v2.png"
+                  alt="twitter"
+                />
+              </span>
+            </a>
+            <span class="icon-circle">
+              <img
+                src="https://img.icons8.com/ios-filled/50/discord-logo.png"
+                alt="discord"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    const hero = document.querySelector(".hero");
+    const heroHeight = hero.offsetHeight;
+
+    if (window.scrollY > heroHeight) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  const menuBtn = document.querySelector(".menu");
+  const navOverlay = document.querySelector(".nav-overlay");
+  const closeBtn = document.querySelector(".close-btn");
+
+  menuBtn.addEventListener("click", () => {
+    navOverlay.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    navOverlay.classList.remove("active");
+  });
+</script>
+

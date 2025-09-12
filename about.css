@@ -1,0 +1,154 @@
+/* Section styling */
+.navbar {
+  background: #1e2540;
+}
+.about-section {
+  background: #1e2540;
+  color: white;
+  text-align: left;
+}
+
+.about-container {
+  max-width: 1500px;
+  margin-left: 270px;
+}
+
+/* Title */
+.about-title {
+  padding-top: 100px;
+  border-bottom: 2px solid white;
+  display: inline-block; /* so the underline fits the text */
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 52px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+  height: 170px;
+}
+
+/* Text */
+.about-text {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-left: 300px;
+  margin-right: 200px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  padding-bottom: 70px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #96d9ee;
+  border: 2px solid #96d9ee;
+}
+
+.info-section {
+  background-color: #2c2f4a; /* dark blue background */
+  padding: 50px 10%;
+  color: white;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 40px; /* space between image and text */
+}
+
+.info-row.reverse {
+  flex-direction: row-reverse; /* flips order */
+}
+
+.info-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info-text {
+  max-width: 600px;
+}
+
+.info-text h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.info-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .info-row,
+  .info-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Default styles (desktop-first) – keep your code here */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .about-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .about-title {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 1.6em;
+    text-align: center; /* center for phone */
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .about-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .about-buttons {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .btn {
+    width: 40%; /* make buttons stretch full width */
+    box-sizing: border-box;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 8px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+}
