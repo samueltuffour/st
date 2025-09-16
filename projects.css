@@ -1,0 +1,44 @@
+.hero {
+  height: 60vh;
+  background: url("projectshero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero p {
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.fancy-underline {
+  border-bottom: 2px solid white;
+  display: inline-block; /* so the underline fits the text */
+  padding-bottom: 2px; /* little spacing */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(124, 115, 172, 0.85); /* overlay color with opacity */
+  transition: opacity 0.4s ease;
+}
