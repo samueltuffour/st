@@ -12,6 +12,7 @@
   margin-bottom: 15px;
   font-size: 23px;
 }
+
 .hero .overlay {
   position: absolute;
   top: 0;
@@ -20,10 +21,12 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
 }
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -31,59 +34,108 @@
 
 .fancy-underline {
   border-bottom: 2px solid white;
-  display: inline-block; /* so the underline fits the text */
-  padding-bottom: 2px; /* little spacing */
+  display: inline-block;
+  padding-bottom: 2px;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(124, 115, 172, 0.85); /* overlay color with opacity */
+  background: rgba(124, 115, 172, 0.85);
   transition: opacity 0.4s ease;
 }
 
-
+/* ===== PROJECTS ===== */
 .projectss {
   width: 100%;
-  padding: 60px 20px;
 }
 
+/* Each row */
 .projects-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 60px;
+  justify-content: center;
+  padding: 55px 15%;
+  gap: 40px;
 }
 
 .projects-row.reverse {
   flex-direction: row-reverse;
 }
 
+/* Alternate background colors */
+.projects-row:nth-child(odd) {
+  background-color: #1e2235;
+}
+
+.projects-row:nth-child(even) {
+  background-color: #2b2f48;
+}
+
+/* Image wrapper */
 .projects-image {
   flex: 1;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Text wrapper */
 .projects-text {
   flex: 1;
-  padding: 20px;
-  color: #fff; /* adjust depending on background */
+  color: #fff;
+  max-width: 600px;
 }
 
 .projects-text h2 {
   font-size: 1.8rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .projects-text p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+/* GitHub link styling */
+.projects-text a {
+  color: #4da6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .projects-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .projects-row.reverse {
+    flex-direction: column; /* disable reverse on small screens */
+  }
+
+  .projects-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .projects-text {
+    max-width: 100%;
+    margin-top: 20px;
+  }
 }
