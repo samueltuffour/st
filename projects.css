@@ -98,6 +98,8 @@
 .projects-text h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  display: inline-block;
 }
 
 .projects-text p {

@@ -4,10 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: white;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* adjust duration */
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 body,

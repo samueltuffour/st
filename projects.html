@@ -70,7 +70,7 @@
         <div class="projects-image">
           <img src="FIGMA6.png" alt="Project 3">
         </div>
-        <div class="project-text">
+        <div class="projects-text">
           <h2>VOLT Sustainability app</h2>
           <p>
             Volt is a smart sustainability application designed to monitor and track household electricity usage, 
@@ -310,6 +310,10 @@
 
   closeBtn.addEventListener("click", () => {
     navOverlay.classList.remove("active");
+  });
+
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
   });
 </script>
 

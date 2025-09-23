@@ -229,5 +229,9 @@
   closeBtn.addEventListener("click", () => {
     navOverlay.classList.remove("active");
   });
+
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
 </script>
 
