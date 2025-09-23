@@ -60,10 +60,12 @@
 
 /* PDF viewer */
 .resume-pdf iframe {
-  width: 1850px;
-  max-width: 5000px;
-  height: 1050px;
+  width: 100%;           /* make iframe responsive */
+  max-width: 1000px;     /* cap so it doesn’t grow too wide */
+  height: 800px;         /* reasonable height on desktop */
   border: none;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Default styles (desktop-first) – keep your code here */
