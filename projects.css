@@ -42,3 +42,48 @@
   background: rgba(124, 115, 172, 0.85); /* overlay color with opacity */
   transition: opacity 0.4s ease;
 }
+
+
+.projectss {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.projects-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.projects-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.projects-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.projects-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.projects-text {
+  flex: 1;
+  padding: 20px;
+  color: #fff; /* adjust depending on background */
+}
+
+.projects-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.projects-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
