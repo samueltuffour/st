@@ -728,10 +728,30 @@ html {
   .about,
   .resume {
     padding: 20px;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .resume a {
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid white; /* underline effect */
+    padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .about a {
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid white; /* underline effect */
+    padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .projects a {
     position: relative;
     z-index: 1;
     border-bottom: 2px solid white; /* underline effect */
