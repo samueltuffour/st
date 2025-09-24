@@ -214,4 +214,29 @@
     color: #dfe7ff;
     text-align: left;
   }
+  /* align buttons to the left edge of the text/header on small screens */
+  .resume-buttons {
+    display: flex;
+    justify-content: flex-start; /* left-align inside the .projects-text block */
+    align-self: flex-start;      /* ensure the button group doesn't stretch/center in a flex column */
+    width: 100%;
+    margin: 18px 0 40px 0;
+    gap: 12px;
+  }
+
+  /* small spacing for multiple buttons */
+  .resume-buttons a {
+    margin: 0;
+  }
+  .btn {
+    align-items: center;      /* valid value instead of 'left' */
+    justify-content: center;  /* valid value instead of 'left' */
+    white-space: nowrap;
+  }
+
+  /* also prevent plain links inside the projects text from wrapping if they are short labels */
+  .projects-text a,
+  .resume-buttons a {
+    white-space: nowrap;
+  }
 }
