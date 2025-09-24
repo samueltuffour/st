@@ -134,16 +134,51 @@
 /* Mobile-friendly */
 @media (max-width: 768px) {
   .info-row,
-  .info-row.reverse {
+  .info-row.reverse,
+  .info-row1,
+  .info-row1.reverse,
+  .info-rowreverse1,
+  .info-rowreverse1.reverse,
+  .info-rowreverse2,
+  .info-rowreverse2.reverse {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 32px;
+    text-align: left;
   }
-}
 
-/* Default styles (desktop-first) – keep your code here */
+  /* ensure image comes before text on mobile regardless of DOM order */
+  .info-image {
+    order: -1;
+    width: 100%;
+    max-width: 720px;
+  }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+  .info-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-text {
+    order: 0;
+    width: 100%;
+    max-width: 720px;
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  /* neutralize large desktop left-margins for small screens */
+  .about-container,
+  .about-title,
+  .about-text {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .about-container {
     margin-left: auto;
     margin-right: auto;
